@@ -31,22 +31,22 @@ const App = () => {
   const setImage =(Text) => {
     if(Text == 'Valid'){
       return( 
-        <Image source={require('../CreditCardValidator/img/valid.png')} style ={{width:32,height:32}} ></Image>
+        <Image source={require('./img/valid.png')} style ={{width:32,height:32}} ></Image>
         );
     }else {
       return( 
-        <Image source={require('../CreditCardValidator/img/invalid.png')} style ={{width:32,height:32}} ></Image>
+        <Image source={require('./img/invalid.png')} style ={{width:32,height:32}} ></Image>
         );
     }
   }
     const setBigImage =(Text) => {
       if(Text == 'Valid'){
         return( 
-          <Image source={require('../CreditCardValidator/img/validbig.png')} style ={{width:50,height:50}} ></Image>
+          <Image source={require('./img/validbig.png')} style ={{width:50,height:50}} ></Image>
           );
       }else {
         return( 
-          <Image source={require('../CreditCardValidator/img/invalidbig.png')} style ={{width:50,height:50}} ></Image>
+          <Image source={require('./img/invalidbig.png')} style ={{width:50,height:50}} ></Image>
           );
       }
     
@@ -93,7 +93,7 @@ const App = () => {
 
     <View style = {styles.CardImageView}>
       <View style={{flex:1}}>      
-        <Image source={require("../CreditCardValidator/img/card.png")} resizeMode='cover' style={{width:'100%',height:'250%'}}  ></Image>
+        <Image source={require("./img/card.png")} resizeMode='cover' style={{width:'100%',height:'250%'}}  ></Image>
       </View>
       <View style={{flex:0.6, flexDirection:'row'}}>
         <View style={{flex:1}}>        
